@@ -4,97 +4,8 @@
   <meta charset="UTF-8">
   <script src="gtm_loader.js"></script>
   <title>Pet Health Score Calculator</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    h1 {
-      margin-top: 0;
-      background-color: #4CAF50;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    form {
-      background-color: #f2f2f2;
-      padding: 20px;
-      margin: 50px auto;
-      max-width: 500px;
-      border-radius: 10px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    label {
-      display: block;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    select,
-    input[type="text"],
-    input[type="number"] {
-      border-radius: 5px;
-      border: none;
-      padding: 10px;
-      margin-bottom: 20px;
-      width: 100%;
-      box-sizing: border-box;
-      font-size: 16px;
-    }
-
-    button[type="submit"] {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    button[type="submit"]:hover {
-      background-color: #3e8e41;
-    }
-
-    #result {
-      font-size: 24px;
-      text-align: center;
-      margin-top: 50px;
-    }
-
-    nav {
-        display: flex;
-        justify-content: center;
-        background-color: #f2f2f2;
-        padding: 10px;
-    }
-    nav a {
-        color: #333;
-        text-decoration: none;
-        padding: 0 15px;
-    }
-    nav a:hover {
-        text-decoration: underline;
-    }
-    main {
-        padding: 20px;
-    }    
-  </style>
 </head>
 <body>
-  <header>
-    <h1>Pawsitively Insured</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="calculator.html">Insurance Calculator</a>
-        <a href="about.html">About Us</a>
-        <a href="testimonials.html">Testimonials</a>
-    </nav>
-  </header>  
   <div style="text-align:center;"><img src="corgi.jpeg" style="width:200px;margin-top:20px;" /></div>
   <h2 style="text-align: center;">Pet Health Score Calculator</h2>
   <form id="pet-form">
@@ -166,7 +77,7 @@
       const breed = breedInput.value;
       const age = ageInput.value;
 
-      const url = 'https://minttutorials.herokuapp.com/api/pawsitive/health-score/';
+      const url = 'https://tutorials.mintacademy.com/api/pawsitive/health-score/';
       const data = {
         breed: breed,
         age: age,
